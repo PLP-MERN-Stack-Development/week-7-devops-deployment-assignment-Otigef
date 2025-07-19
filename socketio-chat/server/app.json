@@ -1,0 +1,50 @@
+{
+  "name": "socketio-chat-backend",
+  "description": "Real-time chat application backend",
+  "repository": "https://github.com/your-username/your-repo",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "express", "socket.io", "chat", "real-time"],
+  "env": {
+    "NODE_ENV": {
+      "description": "Environment",
+      "value": "production"
+    },
+    "MONGO_URI": {
+      "description": "MongoDB Atlas connection string",
+      "required": true
+    },
+    "JWT_SECRET": {
+      "description": "JWT secret key",
+      "required": true,
+      "generator": "secret"
+    },
+    "CORS_ORIGIN": {
+      "description": "Frontend domain for CORS",
+      "required": true
+    },
+    "LOG_LEVEL": {
+      "description": "Logging level",
+      "value": "info"
+    },
+    "ENABLE_MONITORING": {
+      "description": "Enable monitoring",
+      "value": "true"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "addons": [
+    {
+      "plan": "mongolab:sandbox"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+} 

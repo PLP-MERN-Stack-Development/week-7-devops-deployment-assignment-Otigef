@@ -1,0 +1,26 @@
+{
+  "name": "week-7-devops-deployment-assignment-otigef",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd socketio-chat/client && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:chat": "cd socketio-chat/client && npm run dev",
+    "dev:server": "cd socketio-chat/server && npm start",
+    "install:all": "npm install && cd frontend && npm install && cd ../socketio-chat/client && npm install && cd ../server && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PLP-MERN-Stack-Development/week-7-devops-deployment-assignment-Otigef.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PLP-MERN-Stack-Development/week-7-devops-deployment-assignment-Otigef/issues"
+  },
+  "homepage": "https://github.com/PLP-MERN-Stack-Development/week-7-devops-deployment-assignment-Otigef#readme"
+}

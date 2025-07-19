@@ -1,0 +1,40 @@
+{
+  "name": "socketio-chat-server",
+  "version": "1.0.0",
+  "description": "Real-time chat application backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.production.js",
+    "dev": "nodemon server.js",
+    "build": "echo 'No build step required for Node.js server'",
+    "test": "echo 'No tests specified' && exit 0",
+    "lint": "eslint .",
+    "deploy": "npm run build && npm start",
+    "monitor": "node scripts/monitor.js"
+  },
+  "keywords": ["chat", "socket.io", "real-time", "mern"],
+  "author": "Your Name",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.3.1",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.4",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0",
+    "eslint": "^8.0.0"
+  }
+}
